@@ -11,7 +11,7 @@ namespace OnlinePortfolio.Models
     {
         public void SendMail(string fromName, string theSubject, string fromEmail, string textMessage)
         {
-            // Sending from and to... Maybee...
+            // Sending from and to
             MailMessage mail = new MailMessage("inbetween.musicgroup@gmail.com", "Mikael.Brunnberg@gmail.com");
 
             mail.Subject = theSubject;
@@ -22,8 +22,8 @@ namespace OnlinePortfolio.Models
             smtp.Host = "smtp.gmail.com";
             smtp.Port = 587; // Koden är specifik för gmail
 
-            // Nedan är mailadressen samt lösenordet som epostmeddelandet skickas FRÅN
-            smtp.Credentials = new NetworkCredential("inbetween.musicgroup@gmail.com", "MikaelBrunnberg"); // (Skickas från epost, lösenordet till den eposten)
+            // Below is the emailadress and password for the mail which the message is sent FROM
+            smtp.Credentials = new NetworkCredential("inbetween.musicgroup@gmail.com", "MikaelBrunnberg"); // (Email sent from, password to the same email)
             smtp.EnableSsl = true;
             smtp.Send(mail);
         }
