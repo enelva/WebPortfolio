@@ -332,6 +332,11 @@ textarea {
         text-decoration: none !important;
     }
 
+.about-section .standard-btn {
+    margin: 10px 10px;
+}
+
+
 .round-icon-btn {
     text-transform: uppercase;
     border: 1px solid #fff;
