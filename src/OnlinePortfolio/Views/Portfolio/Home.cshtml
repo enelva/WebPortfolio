@@ -1,0 +1,155 @@
+﻿@model HomeVM
+
+@{
+    ViewBag.Title = "Mikael Brunnbergs Portfolio";
+}
+
+<!-- Intro Header -->
+<header class="intro" id="intro">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="brand-heading">Portfolio</h1>
+                    <p class="intro-text">
+                        Web development, graphic and product design
+                        <br>Created by Mikael Brunnberg
+                    </p>
+                    <a href="#portfolio" class="btn btn-circle page-scroll">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Portfolio Section -->
+<section id="portfolio" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>Portfolio</h2>
+        </div>
+    </div>
+</section>
+<!-- About Section -->
+<section id="about" class="content-section text-center">
+    <div class="download-section">
+        <div class="container">
+            @*<div class="col-lg-10 col-lg-offset-1">*@
+            <h2>About</h2>
+            <div class="col-lg-5 col-md-6 col-sm-6 col-lg-offset-1 rightParagraph">
+                <p class="pLeft">
+                    My background has been in looking at design from a product angle,
+                    figuring out how iconic objects can refresh the product portfolio,
+                    launch a start-up brand or how to create a user friendly product.
+                    I have a masters degree in design and product development and I
+                    have experience of working with product design withing the exhibition
+                    industries, designing customized products. I've also worked as a freelancer
+                    for a start-up company where I designed an air monitor, and as a part
+                    of my master theses I re-designed Bahco's Ergo-bow saw.
+                    <br />
+                </p>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-6 leftParagraph">
+                <p class="pLeft">
+                    Right now I am taking a new direction towards the IT industry where I
+                    can build on my recent graphic design training from Berghs School of
+                    Communication coupled with my ongoing accelerated learning program in
+                    C# and .NET at Academic Work Academy. I love new challenges and hope
+                    to work with UX/web-design where I can apply my previous knowledge to develop
+                    new existing and eye-catching applications.
+                    <br /><br />
+                    If you have any questions please do not hesitate to <a class="page-scroll" href="#contact">contact me!</a>
+                <p />
+            </div>
+            <br />
+            <div class="col-sm-6 col-sm-offset-3 centerImgae divImage ratio11 img-circle" style="background-image: url(../img/general/mikael_middag.jpg);"></div>
+            <div class="col-lg-10 col-md-12 col-sm-12 col-lg-offset-1">
+                <br />
+                <br />
+                <h3>Download CV</h3>
+                <p>To see my CV, please download it below, either in English or in Swedish.</p>
+                <button class="standard-btn btn-width-medium rightMargin10" onclick="window.open('../general/CV/Mikael_Brunnberg_CV_English.pdf')">English CV</button>
+                <button class="standard-btn btn-width-medium leftMargin10" onclick="window.open('../general/CV/Mikael_Brunnberg_CV_Svenska.pdf')">Swedish CV</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <h2>Contact</h2>
+            <p>Feel free to contact me via email or phone!</p>
+            <div class="col-sm-4 contactInformation">
+                <h3 class="hidden-xs">Contact Information</h3>
+                <p class="hidden-xs firstP">Mikael Brunnberg</p>
+                <p><a href="mailto:feedback@startbootstrap.com">mikael.brunnberg@gmail.com</a></p>
+                <p><a href="tel:0046708460256">+46 708 460 256</a></p>
+                <p class="hidden-xs">Stockholm, Sweden</p>
+            </div>
+
+            <div class="col-sm-8">
+                <h3 class="hidden-lg hidden-md hidden-sm topMargin20 bottomMargin0">Notify Me</h3>
+                <!-- #region MailSender -->
+                <div asp-validation-summary="ValidationSummary.All"></div>
+                <form asp-controller="Portfolio" asp-action="SendAnEmail">
+                    <div class="row">
+                        <div class="col-sm-4 form-group">
+                            <input type="text" asp-for="MailSenderVMThing.Subject" placeholder="Subject">
+                            <span asp-validation-for="MailSenderVMThing.Subject"></span>
+                        </div>
+                        <div class="col-sm-4 form-group">
+                            <input type="text" asp-for="MailSenderVMThing.Name" placeholder="Name">
+                            <span asp-validation-for="MailSenderVMThing.Name"></span>
+                        </div>
+                        <div class="col-sm-4 form-group">
+                            <input asp-for="MailSenderVMThing.Email" placeholder="Email">
+                            <span asp-validation-for="MailSenderVMThing.Email"></span>
+                        </div>
+                    </div>
+                    <textarea asp-for="MailSenderVMThing.Message" placeholder="Message" rows="5"></textarea>
+                    <span asp-validation-for="MailSenderVMThing.Message"></span>
+                    <br />
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <input class="standard-btn btn-width-small" type="submit" value="Send" style="float: right" />
+                        </div>
+                    </div>
+                </form>
+                <!-- #endregion -->
+            </div>
+
+            <br />
+            <br />
+
+            <ul class="list-inline banner-social-buttons">
+                <li>
+                    <a href="https://se.linkedin.com/in/mikael-brunnberg-17669793" target="_blank" class="btn-socialMedia btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linked in</span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/enelva" target="_blank" class="btn-socialMedia btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                </li>
+                <li>
+                    <a href="http://enelva.deviantart.com/" target="_blank" class="btn-socialMedia btn btn-default btn-lg"><i class="fa fa-deviantart fa-fw"></i> <span class="network-name">DeviantArt</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<br />
+<br />
+<br />
+<!-- #region Footer -->
+<footer class="footerStyle">
+    <div class="container text-center">
+        <a href="#intro" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-up animated" style="margin-top: -20px;"></i>
+        </a>
+        <br />
+        <br />
+        <br />
+        <p class="pSmall">Copyright &copy; | Mikael Brunnberg | <a class="footerLink" href="mailto:feedback@startbootstrap.com">mikael.brunnberg@gmail.com</a> | <a class="footerLink" href="tel:0046708460256"> +46 708 460 256 </a></p>
+    </div>
+</footer>
+<!-- #endregion -->
