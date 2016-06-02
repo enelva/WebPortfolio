@@ -175,6 +175,7 @@ a:hover {
         -moz-animation-timing-function: linear;
     }
 
+/* Pulse Animation */
 @-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
@@ -331,6 +332,34 @@ textarea {
         text-decoration: none !important;
     }
 
+.round-icon-btn {
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    text-align: center;
+    display: inline-block;
+    color: #000;
+    background-color: #fff;
+    padding: 2px;
+    font-size: 24px;
+    font-family: "Helvetica Neue",Helvetica;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+    /* Hovering over a button */
+    .round-icon-btn:hover {
+        border: 1px solid #fff;
+        color: #fff;
+        background-color: transparent;
+        text-decoration: none !important;
+    }
+
 
 /* Button Width */
 .btn-width-ikon {
@@ -402,4 +431,23 @@ footer {
 
     footer p {
         margin: 0;
+    }
+
+.upChevron {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.footerStyle .btn-circle {
+    border: none;
+    color: none;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+    .footerStyle .btn-circle:hover /*.btn-circle:focus*/ {
     }

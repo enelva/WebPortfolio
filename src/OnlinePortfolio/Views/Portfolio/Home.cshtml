@@ -122,18 +122,6 @@
 
             <br />
             <br />
-
-            <ul class="list-inline banner-social-buttons">
-                <li>
-                    <a href="https://se.linkedin.com/in/mikael-brunnberg-17669793" target="_blank" class="btn-socialMedia btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linked in</span></a>
-                </li>
-                <li>
-                    <a href="https://github.com/enelva" target="_blank" class="btn-socialMedia btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                </li>
-                <li>
-                    <a href="http://enelva.deviantart.com/" target="_blank" class="btn-socialMedia btn btn-default btn-lg"><i class="fa fa-deviantart fa-fw"></i> <span class="network-name">DeviantArt</span></a>
-                </li>
-            </ul>
         </div>
     </div>
 </section>
@@ -143,11 +131,21 @@
 <!-- #region Footer -->
 <footer class="footerStyle">
     <div class="container text-center">
-        <a href="#intro" class="btn btn-circle page-scroll">
-            <i class="fa fa-angle-double-up animated" style="margin-top: -20px;"></i>
+        <a href="#intro" class="btn btn-circle page-scroll upChevron">
+            <i class="fa fa-chevron-up animated" style="margin-top: -20px;"></i>
         </a>
         <br />
-        <br />
+        <ul class="list-inline banner-social-buttons">
+            <li>
+                <button onclick="window.open('https://se.linkedin.com/in/mikael-brunnberg-17669793','_blank')" class="round-icon-btn"><span class="fa fa-linkedin fa-f"></span></button>
+            </li>
+            <li>
+                <button onclick="window.open('https://github.com/enelva', '_blank')" class="round-icon-btn"><span class="fa fa-github fa-fw"></span></button>
+            </li>
+            <li>
+                <button onclick="window.open('http://enelva.deviantart.com/', '_blank')" class="round-icon-btn"><span class="fa fa-deviantart fa-fw"></span></button>
+            </li>
+        </ul>
         <br />
         <p class="pSmall">Copyright &copy; | Mikael Brunnberg | <a class="footerLink" href="mailto:feedback@startbootstrap.com">mikael.brunnberg@gmail.com</a> | <a class="footerLink" href="tel:0046708460256"> +46 708 460 256 </a></p>
     </div>
