@@ -21,6 +21,16 @@ namespace OnlinePortfolio.Controllers
             return View();
         }
 
+        public IActionResult TestProject()
+        {
+            return View();
+        }
+
+        public IActionResult Test2()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult SendAnEmail(MailSenderVM mailSenderVMThing) // Lägg in en VM för det!
         {

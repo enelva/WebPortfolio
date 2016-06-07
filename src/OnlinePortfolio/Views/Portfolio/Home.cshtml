@@ -1,7 +1,7 @@
 ﻿@model HomeVM
 
 @{
-    ViewBag.Title = "Mikael Brunnbergs Portfolio";
+    ViewBag.Title = "Mikael Brunnberg";
 }
 
 <!-- Intro Header -->
@@ -27,33 +27,155 @@
 <section id="portfolio" class="container content-section text-center">
     <div class="col-lg-10 col-lg-offset-1">
         <h2>Portfolio</h2>
-
-        <div class="col-sm-3 col-xs-6 divImage portfolioClickableImage topMargin36" data-toggle="modal" data-target="#myModal" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Alcedo_atthis_2_(Lukasz_Lukasik).jpg/800px-Alcedo_atthis_2_(Lukasz_Lukasik).jpg');">
-        <div class="layer"></div>
-        </div>
-
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>This is a large modal.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+        <h4 class="portfolioColor">Graphic Design & Web Development</h4>
+        <!-- #region Inbetween -->
+        <div class="col-sm-3 col-xs-6 divImage portfolioClickableImage topMargin36" data-toggle="modal" data-target="#Inbetween" style="background-image: url(../img/GraphicDesign/Inbetween/1.jpg)">
+            <div class="layer">
+                <h4 class="pictureInformation">Inbetween</h4>
+                <p class="pictureInformation">Graphical profile and webpage created for the band Inbetween</p>
             </div>
         </div>
+        <!-- #endregion -->
+        <!-- #region Fud -->
+        <div class="col-sm-3 col-xs-6 divImage portfolioClickableImage topMargin36" data-toggle="modal" data-target="#Fud" style="background-image: url(../img/GraphicDesign/Fud/01.jpg)">
+            <div class="layer">
+                <h4 class="pictureInformation">Fud</h4>
+                <p class="pictureInformation">Graphic profile and web design for a grocery store</p>
+            </div>
+        </div>
+        <!-- #endregion -->
+        <!-- #region Remind -->
+        <div class="col-sm-3 col-xs-6 divImage portfolioClickableImage topMargin36" data-toggle="modal" data-target="#Remind" style="background-image: url(../img/GraphicDesign/Remind/01.jpg)">
+            <div class="layer">
+                <h4 class="pictureInformation">Remind</h4>
+                <p class="pictureInformation">Editorial design for the magazine Remind, done at Bergh</p>
+            </div>
+        </div>
+        <!-- #endregion -->
+        <!-- #region Prints -->
+        <div class="col-sm-3 col-xs-6 divImage portfolioClickableImage topMargin36 bottomMargin36" data-toggle="modal" data-target="#Prints" style="background-image: url(../img/GraphicDesign/Prints/01.jpg)">
+            <div class="layer">
+                <h4 class="pictureInformation">Prints</h4>
+                <p class="pictureInformation">Brochures and posters for various projects</p>
+            </div>
+        </div>
+        <!-- #endregion -->
+
+        <h4 class="portfolioColor">Product Design</h4>
+        <!-- #region 720 -->
+        <div class="col-sm-3 col-xs-6 divImage portfolioClickableImage topMargin36" data-toggle="modal" data-target="#720" style="background-image: url(../img/ProductDesign/720/01.jpg)">
+            <div class="layer">
+                <h4 class="pictureInformation">720°</h4>
+                <p class="pictureInformation">Designed the cover for 720°'s air monitor</p>
+            </div>
+        </div>
+        <!-- #endregion -->
+        <!-- #region 720 -->
+        <div class="col-sm-3 col-xs-6 divImage portfolioClickableImage topMargin36" data-toggle="modal" data-target="#AmpelHouse" style="background-image: url(../img/ProductDesign/AmpelHouse/01.jpg)">
+            <div class="layer">
+                <h4 class="pictureInformation">Ampel House</h4>
+                <p class="pictureInformation">Designed a combination of a hanging flower pot and a bird house - "Ampel House"</p>
+            </div>
+        </div>
+        <!-- #endregion -->
+
+
+        <!-- #region Inbetween Carousell -->
+        <div id="Inbetween" class="modal">
+            <span class="closePortfolioModal" data-dismiss="modal">×</span>
+            <img class="Inbetween portfolioModalSize" src="~/img/GraphicDesign/Inbetween/1.jpg">
+            <img class="Inbetween portfolioModalSize" src="~/img/GraphicDesign/Inbetween/2.jpg">
+            <img class="Inbetween portfolioModalSize" src="~/img/GraphicDesign/Inbetween/3.jpg">
+            <img class="Inbetween portfolioModalSize" src="~/img/GraphicDesign/Inbetween/4.jpg">
+            <a class="carouselArrow leftCarouselArrow" onclick="plusDivs(-1, 'Inbetween')"><span class="fa fa-chevron-left"></span></a>
+            <a class="carouselArrow rightCarouselArrow" onclick="plusDivs(1, 'Inbetween')"><span class="fa fa-chevron-right"></span></a>
+        </div>
+        <!-- #endregion -->
+        <!-- #region Fud Carousell -->
+        <div id="Fud" class="modal">
+            <span class="closePortfolioModal" data-dismiss="modal">×</span>
+            <img class="Fud portfolioModalSize" src="~/img/GraphicDesign/Fud/01.jpg">
+            <img class="Fud portfolioModalSize" src="~/img/GraphicDesign/Fud/02.jpg">
+            <img class="Fud portfolioModalSize" src="~/img/GraphicDesign/Fud/03.jpg">
+            <img class="Fud portfolioModalSize" src="~/img/GraphicDesign/Fud/04.jpg">
+            <img class="Fud portfolioModalSize" src="~/img/GraphicDesign/Fud/05.jpg">
+            <img class="Fud portfolioModalSize" src="~/img/GraphicDesign/Fud/06.jpg">
+            <img class="Fud portfolioModalSize" src="~/img/GraphicDesign/Fud/07.jpg">
+            <img class="Fud portfolioModalSize" src="~/img/GraphicDesign/Fud/08.jpg">
+            <img class="Fud portfolioModalSize" src="~/img/GraphicDesign/Fud/09.jpg">
+            <img class="Fud portfolioModalSize" src="~/img/GraphicDesign/Fud/10.jpg">
+            <img class="Fud portfolioModalSize" src="~/img/GraphicDesign/Fud/11.jpg">
+            <img class="Fud portfolioModalSize" src="~/img/GraphicDesign/Fud/12.jpg">
+            <a class="carouselArrow leftCarouselArrow" onclick="plusDivs(-1, 'Fud')"><span class="fa fa-chevron-left"></span></a>
+            <a class="carouselArrow rightCarouselArrow" onclick="plusDivs(1, 'Fud')"><span class="fa fa-chevron-right"></span></a>
+        </div>
+        <!-- #endregion -->
+        <!-- #region Remind Carousell -->
+        <div id="Remind" class="modal">
+            <span class="closePortfolioModal" data-dismiss="modal">×</span>
+            <img class="Remind portfolioModalSize" src="~/img/GraphicDesign/Remind/01.jpg">
+            <img class="Remind portfolioModalSize" src="~/img/GraphicDesign/Remind/02.jpg">
+            <img class="Remind portfolioModalSize" src="~/img/GraphicDesign/Remind/03.jpg">
+            <img class="Remind portfolioModalSize" src="~/img/GraphicDesign/Remind/04.jpg">
+            <img class="Remind portfolioModalSize" src="~/img/GraphicDesign/Remind/05.jpg">
+            <img class="Remind portfolioModalSize" src="~/img/GraphicDesign/Remind/06.jpg">
+            <img class="Remind portfolioModalSize" src="~/img/GraphicDesign/Remind/07.jpg">
+            <a class="carouselArrow leftCarouselArrow" onclick="plusDivs(-1, 'Remind')"><span class="fa fa-chevron-left"></span></a>
+            <a class="carouselArrow rightCarouselArrow" onclick="plusDivs(1, 'Remind')"><span class="fa fa-chevron-right"></span></a>
+        </div>
+        <!-- #endregion -->
+        <!-- #region Prints Carousell -->
+        <div id="Prints" class="modal">
+            <span class="closePortfolioModal" data-dismiss="modal">×</span>
+            <img class="Prints portfolioModalSize" src="~/img/GraphicDesign/Prints/01.jpg">
+            <img class="Prints portfolioModalSize" src="~/img/GraphicDesign/Prints/02.jpg">
+            <img class="Prints portfolioModalSize" src="~/img/GraphicDesign/Prints/03.jpg">
+            <img class="Prints portfolioModalSize" src="~/img/GraphicDesign/Prints/04.jpg">
+            <img class="Prints portfolioModalSize" src="~/img/GraphicDesign/Prints/05.jpg">
+            <img class="Prints portfolioModalSize" src="~/img/GraphicDesign/Prints/06.jpg">
+            <img class="Prints portfolioModalSize" src="~/img/GraphicDesign/Prints/07.jpg">
+            <img class="Prints portfolioModalSize" src="~/img/GraphicDesign/Prints/08.jpg">
+            <a class="carouselArrow leftCarouselArrow" onclick="plusDivs(-1, 'Prints')"><span class="fa fa-chevron-left"></span></a>
+            <a class="carouselArrow rightCarouselArrow" onclick="plusDivs(1, 'Prints')"><span class="fa fa-chevron-right"></span></a>
+        </div>
+        <!-- #endregion -->
+        <!-- #region 720 Carousell -->
+        <div id="720" class="modal">
+            <span class="closePortfolioModal" data-dismiss="modal">×</span>
+            <img class="720 portfolioModalSize" src="~/img/ProductDesign/720/01.jpg">
+            <img class="720 portfolioModalSize" src="~/img/ProductDesign/720/02.jpg">
+            <img class="720 portfolioModalSize" src="~/img/ProductDesign/720/03.jpg">
+            <img class="720 portfolioModalSize" src="~/img/ProductDesign/720/04.jpg">
+            <img class="720 portfolioModalSize" src="~/img/ProductDesign/720/05.jpg">
+            <a class="carouselArrow leftCarouselArrow" onclick="plusDivs(-1, '720')"><span class="fa fa-chevron-left"></span></a>
+            <a class="carouselArrow rightCarouselArrow" onclick="plusDivs(1, '720')"><span class="fa fa-chevron-right"></span></a>
+        </div>
+        <!-- #endregion -->
+        <!-- #region AmpelHouse Carousell -->
+        <div id="AmpelHouse" class="modal">
+            <span class="closePortfolioModal" data-dismiss="modal">×</span>
+            <img class="AmpelHouse portfolioModalSize" src="~/img/ProductDesign/AmpelHouse/01.jpg">
+            <img class="AmpelHouse portfolioModalSize" src="~/img/ProductDesign/AmpelHouse/02.jpg">
+            <img class="AmpelHouse portfolioModalSize" src="~/img/ProductDesign/AmpelHouse/03.jpg">
+            <img class="AmpelHouse portfolioModalSize" src="~/img/ProductDesign/AmpelHouse/04.jpg">
+            <img class="AmpelHouse portfolioModalSize" src="~/img/ProductDesign/AmpelHouse/05.jpg">
+            <a class="carouselArrow leftCarouselArrow" onclick="plusDivs(-1, 'AmpelHouse')"><span class="fa fa-chevron-left"></span></a>
+            <a class="carouselArrow rightCarouselArrow" onclick="plusDivs(1, 'AmpelHouse')"><span class="fa fa-chevron-right"></span></a>
+        </div>
+        <!-- #endregion -->
+
+
+
+
     </div>
+
 </section>
 <!-- About Section -->
 <section id="about" class="content-section text-center">
     <div class="about-section">
         <div class="container">
+            <br />
+            <br />
             <h2>About</h2>
             <div class="col-lg-5 col-md-6 col-sm-6 col-lg-offset-1 rightParagraph">
                 <p class="pLeft">
@@ -169,3 +291,23 @@
     </div>
 </footer>
 <!-- #endregion -->
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex, nameOfProject);
+
+    function plusDivs(n, nameOfProject) {
+        showDivs(slideIndex += n, nameOfProject);
+    }
+
+    function showDivs(n, nameOfProject) {
+        var i;
+        var x = document.getElementsByClassName(nameOfProject);
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length };
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+</script>
