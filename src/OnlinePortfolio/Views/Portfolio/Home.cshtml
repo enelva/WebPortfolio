@@ -3,7 +3,6 @@
 @{
     ViewBag.Title = "Mikael Brunnberg";
 }
-
 <!-- Intro Header -->
 <header class="intro" id="intro">
     <div class="intro-body">
@@ -120,7 +119,6 @@
             </div>
         </div>
         <!-- #endregion -->
-
         <!-- #region Inbetween Carousell -->
         <div id="Inbetween" class="modal">
             <span class="closePortfolioModal" data-dismiss="modal">×</span>
@@ -369,18 +367,27 @@
 <footer class="footerStyle">
     <div class="container text-center">
         <a href="#intro" class="btn btn-circle page-scroll upChevron">
-            <i class="fa fa-chevron-up animated" style="margin-top: -20px;"></i>
+            <i class="fa fa-chevron-up animated standard-tooltip"  data-toggle="tooltip" title="Go to Top" style="margin-top: -20px;"></i>
         </a>
         <br />
         <ul class="list-inline banner-social-buttons">
             <li>
-                <button onclick="window.open('https://se.linkedin.com/in/mikael-brunnberg-17669793','_blank')" class="round-icon-btn"><span class="fa fa-linkedin fa-f"></span></button>
+                <button onclick="window.open('https://se.linkedin.com/in/mikael-brunnberg-17669793','_blank')"
+                        class="round-icon-btn standard-tooltip" data-toggle="tooltip" title="Linked In">
+                    <span class="fa fa-linkedin fa-f"></span>
+                </button>
             </li>
             <li>
-                <button onclick="window.open('https://github.com/enelva', '_blank')" class="round-icon-btn"><span class="fa fa-github fa-fw"></span></button>
+                <button onclick="window.open('https://github.com/enelva', '_blank')"
+                        class="round-icon-btn standard-tooltip" data-toggle="tooltip" title="GitHub">
+                    <span class="fa fa-github fa-fw"></span>
+                </button>
             </li>
             <li>
-                <button onclick="window.open('http://enelva.deviantart.com/', '_blank')" class="round-icon-btn"><span class="fa fa-deviantart fa-fw"></span></button>
+                <button onclick="window.open('http://enelva.deviantart.com/', '_blank')"
+                        class="round-icon-btn standard-tooltip" data-toggle="tooltip" title="DeviantArt">
+                    <span class="fa fa-deviantart fa-fw"></span>
+                </button>
             </li>
         </ul>
         <br />
