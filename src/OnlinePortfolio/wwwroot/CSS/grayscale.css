@@ -376,14 +376,15 @@ textarea {
     font-family: "Helvetica Neue",Helvetica;
     font-weight: 400;
     color: #fff;
-    -webkit-box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.25);
+    /*-webkit-box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.25);
     -moz-box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.25);
-    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.25);
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.25);*/
 }
 
 .standard-tooltip + .tooltip > .tooltip-arrow {
     border-top-color: rgba(237,29,36,1);
-    text-shadow: 5px 5px 10px 1px rgba(0,0,0,0.25);
+    border-bottom-color: rgba(237,29,36,1);
+    /*text-shadow: 5px 5px 10px 1px rgba(0,0,0,0.25);*/
 }
 
 /*.redT + .tooltip > .tooltip-inner {
@@ -468,7 +469,7 @@ footer {
 
 .closePortfolioModal {
     position: absolute;
-    color: #fff;
+    color: #eaeaea;
     font-weight: bold;
     transition: 0.3s;
     font-weight: 300;
@@ -481,7 +482,7 @@ footer {
     .closePortfolioModal:hover,
     .closePortfolioModal:focus,
     .carouselArrow:hover {
-        color: #ffffff;
+        color: rgba(237,29,36,1);
         opacity: 1;
         text-decoration: none;
         cursor: pointer;
@@ -490,8 +491,8 @@ footer {
 .carouselArrow {
     position: absolute;
     top: 45%;
-    color: #ffffff;
-    opacity: 0.5;
+    color: #eaeaea;
+    opacity: 1;
     font-size: 32px;
 }
 
@@ -521,49 +522,4 @@ footer {
     .portfolioModalSize {
         height: 80%;
     }
-}
-
-/*@media (min-width: 768px) {
-.portfolioModalSize {
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    height: auto;
-}
-
-.closePortfolioModal {
-    font-size: 40px;
-    top: 4px;
-    right: 20px;
-}
-}
-
-@media (max-width: 768px) {
-    .portfolioModalSize {
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-        height: auto;
-    }
-
-    .closePortfolioModal {
-        font-size: 16px;
-        top: 4px;
-        right: 8px;
-    }
-}*/
-
-.modal-open .modal {
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-.navbar-fixed-top, .navbar-fixed-bottom {
-    margin-right: 0 !important;
-    padding-right: 0 !important;
-}
-
-.modal-backdrop.in {
-    filter: alpha(opacity=90);
-    opacity: 0.9;
 }
